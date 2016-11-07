@@ -5,10 +5,26 @@
  */
 package com.mycompany.chasse_tresor;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author flesguer
  */
 public class Joueur {
+
+public String identifiant;
+public int positionX = 0;
+public int positionY = 0;
+public ArrayList<String> deplacements;
+
+    public Joueur(String identifiant, ArrayList<String> deplacements) {
+        this.identifiant = identifiant;
+        this.deplacements = deplacements;
+    }
+
     
+
+
+
 }
