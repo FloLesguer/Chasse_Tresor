@@ -13,7 +13,7 @@ public class Carte {
     public int largeur;
     public int hauteur;
 
-    public Carte() {
+    public Carte(int largeur, int hauteur) {
         
         
         this.largeur = largeur;
