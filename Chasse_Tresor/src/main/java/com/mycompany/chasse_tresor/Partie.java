@@ -20,11 +20,12 @@ public class Partie {
        
         File file =new File("fichierCarte.txt");
         Scanner in = null;
+        String line = null;
         try {
             in = new Scanner(file);
             while(in.hasNext())
             {
-                String line=in.nextLine();
+                line=in.nextLine();
                 if(line.contains("C "))
                     System.out.println(line);
             }
@@ -36,7 +37,11 @@ public class Partie {
         
         
         
-        Carte carte = new Carte(8, 8);
+        Carte carte = new Carte(ToInt(line.substring(2,1)), ToInt(line.substring(4,1)));
+    }
+
+    private static int ToInt(String substring) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
