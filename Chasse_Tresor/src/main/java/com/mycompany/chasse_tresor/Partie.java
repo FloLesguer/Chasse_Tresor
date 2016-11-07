@@ -15,7 +15,8 @@ public class Partie {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Carte carte = new Carte(8, 8);
     }
     
 }
